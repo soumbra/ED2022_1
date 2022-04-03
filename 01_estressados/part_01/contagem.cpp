@@ -78,9 +78,9 @@ bool homens_sao_mais_estressados_que_mulheres (vector<int> fila) {
 
 int main()
 {
-    cout << calcular_stress_medio({5, 3, -1, -50, -1, -99}) << '\n';
+    cout << calcular_stress_medio({5, 3, -6, -50, -1, -99}) << '\n';
     cout << mais_homens_ou_mulheres({5, 3, 1, -50, -1, 99}) << '\n';
-    cout << qual_metade_eh_mais_estressada({5, -6, 4, -4}) << '\n';
-    cout << homens_sao_mais_estressados_que_mulheres({5, 4, -2, -3}) << '\n';
+    cout << qual_metade_eh_mais_estressada({5, -6, 10, -4}) << '\n';
+    cout << homens_sao_mais_estressados_que_mulheres({5, 4, -7, -3}) << '\n';
 
 }

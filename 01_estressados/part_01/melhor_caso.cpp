@@ -55,6 +55,7 @@ int procurar_melhor_pos_se(vector<int> fila) {
 int main() 
 {
     cout << procurar_menor({5, 3, -1, -50, -1, -99}) << '\n';
-    cout << procurar_pos_menor({5, 3, -1, -50, -1, -99}) << '\n';
+    cout << procurar_pos_menor({5, 3, -1, -99, -1, -90}) << '\n';
     cout << procurar_pos_menor_apartir({5, 3, -1, -50, -1, 10}, 3) << '\n';
+    cout << procurar_melhor_pos_se({5, 3, -1, -99, 1, -90}) << '\n';
 }
