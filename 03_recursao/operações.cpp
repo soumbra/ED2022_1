@@ -16,7 +16,7 @@ ostream& operator<<(ostream& os, const vector<int>& v)
     return os;
 }
 
-void imprimir (vector<int> v, int size) {
+void imprimir(vector<int> v, int size) {
     if (size == 1) {
         cout << v[size-1];
     } else {
@@ -25,7 +25,7 @@ void imprimir (vector<int> v, int size) {
     }
 }
 
-void inverter (vector<int> v, int size, int i = -1) {
+void inverter(vector<int> v, int size, int i = -1) {
     if (i == (size-1)) {
         return;
     } else {
@@ -35,7 +35,7 @@ void inverter (vector<int> v, int size, int i = -1) {
     }
 }
 
-int soma (vector<int> v, int size) {
+int soma(vector<int> v, int size) {
     if (size == 1) {
         return v[0];
     }
@@ -43,7 +43,7 @@ int soma (vector<int> v, int size) {
     return soma(v, size - 1) + v[size - 1];
 }
 
-int multiplica (vector<int> v, int size) {
+int multiplica(vector<int> v, int size) {
     if (size == 1) {
         return v[0];
     } 
@@ -64,7 +64,7 @@ int menor(vector<int> v,int i = 0, int menor_num = 0) {
 }
 
 
-void inv (vector<int> &v, int size, int i = 0, int contador = 1) {
+void inv(vector<int> &v, int size, int i = 0, int contador = 1) {
     if (i == (size)/2) {
         cout << v << '\n';
         return;
