@@ -62,9 +62,9 @@ int main()
     cin >> linha >> proximidade;
     
     //Brincando de sortear o limite
-    srand((unsigned)time(0));
-    int limite = rand()%(10-0)+1;
-
+    //srand((unsigned)time(0));
+    //int limite = rand()%(10-0)+1;
+    int limite = proximidade;
     preencher(linha, 0, limite, proximidade);
     cout << linha << '\n';
     cout << "Limite: " << limite << " " << procura_valido(linha);
