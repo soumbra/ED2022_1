@@ -32,7 +32,6 @@ Pos inicio_fim(vector<string> &labirinto, char procurado) {
     }
 
     return {-1, -1};
-    
 }
 
 bool achar_caminho(vector<string> &labirinto, Pos inicio, Pos fim){
@@ -57,18 +56,20 @@ bool achar_caminho(vector<string> &labirinto, Pos inicio, Pos fim){
 }
 
 int main(){
-    vector<string> labirinto;
-    int nl {}, nc {};
+    int nl = 0, nc = 0;
     cin >> nl >> nc;
-    
-    for(int l = 0; l < nl; l++){
-        string line;
-        cin >> line;
-        labirinto.push_back(line);
+    vector<string> labirinto(nl, "");
+    getchar();
+    Pos inicio, fim;
+
+    for (int i = 0; i < nl; i++) {
+        getline(cin, labirinto[i]);
     }
-    
-    Pos inicio {inicio_fim (labirinto, 'I')};
-    Pos fim {inicio_fim (labirinto, 'F')};
+
+    inicio = inicio_fim (labirinto, 'I');
+    fim = inicio_fim (labirinto, 'F');
     achar_caminho (labirinto, inicio, fim);
     show (labirinto);
+
+    return 0;
 }
